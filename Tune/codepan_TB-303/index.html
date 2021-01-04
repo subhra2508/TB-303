@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>codepan</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Javascript TB-303 emulator (WIP)</h1>
+  <div class="synth">
+    <div class="synthControls">
+      <div class="knob">
+        <h3>Tempo</h3>
+        <input id="tempo" data-width="75" data-height="75" data-fgColor="#66EE66" data-displayInput="false" value="120" data-min="60" data-max="180">
+      </div>
+
+      <!--<div class="knob">
+            <h3>Tuning</h3>
+            <input id="tuning"
+                   data-width="75"
+                   data-height="75"
+                   data-fgColor="#66EEEE"
+                   
+                   value="0"
+                   data-min="0"
+                   data-max="440">
+        </div>-->
+
+
+      <div class="knob">
+        <h3>Decay</h3>
+        <input id="decay" data-width="75" data-height="75" data-fgColor="#000066" data-displayInput="false" value="0" data-min="0" data-max="25">
+      </div>
+    </div>
+
+
+    <div class="stepSequencer">
+      <h2>Step Sequencer</h2>
+
+      <ul id="steps">
+
+      </ul>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

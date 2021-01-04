@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>TB-303</title>
+</head>
+<body class="bg-light">
+ <h1 class="text-center">TB-303</h1>
+<!-- add a audio visualizer and audio waveforms -->
+ <div class="d-flex mb-2">
+   <button class="btn btn-lg btn-info mr-2 ml-2">Synthesizer</button>
+   <button class="btn btn-lg btn-outline-info">Sequencer</button>   
+ </div>
+ <div class="row synth">
+     <div class="col-md-3">
+         <div class="card ml-2">
+             <div class="card-body">
+                <input type="range">
+                <h5>Tuning</h5>  
+             </div>
+         </div>
+         <div class="card ml-2 mt-2">
+             <div class="card-body">
+                <input type="range">
+                <h5>Pitch</h5>  
+             </div>
+         </div>
+     </div>
+     <div class="col-md-3">
+         <div class="card">
+             <div class="card-body">
+                 <input type="range">
+                <h5>Resonace</h5>
+                <input type="range">
+                <h5>Cuttoff</h5>
+                
+             </div>
+         </div>
+     </div>
+     <div class="col-md-3">
+         <div class="card">
+             <div class="card-body">
+                <input type="range">
+                <h5>ENV mode</h5>
+                <input type="range">
+                <h5>Decay</h5>
+                <input type="range">
+                <h5>Accend</h5>
+             </div>
+         </div>
+     </div>
+     <div class="col-md-3">
+         <div class="card">
+             <div class="card-body ">
+                <input type="range">
+                <h5>Volume</h5>
+             </div>
+         </div>
+         <div class="card mt-2">
+             <div class="card-body ">
+                <input type="range">
+                <h5>Tempo</h5>
+             </div>
+         </div>
+     </div>
+ </div>
+ <div class="row">
+     <div class="col d-flex mt-4 ml-4">
+         <div class="m-2 text-end box">
+            1.
+            <p class="text-center "></p>
+         </div>
+         <div class="m-2 box">
+            2. <p></p>
+         </div>
+         <div class="m-2 box">
+             3.
+         </div>
+         <div class="m-2 box">
+           4.
+         </div>
+         <div class="m-2 box">
+           5.
+         </div>
+         <div class="m-2 box">
+           6.
+         </div>
+         <div class="m-2 box">
+          7.
+         </div>
+         <div class="m-2 box">
+          8.
+         </div>
+         <div class="m-2 box">
+          9.
+         </div>
+         <div class="m-2 box">
+           10.
+         </div>
+         <div class="m-2 box">
+           11.
+         </div>
+         <div class="m-2 box">
+          12.
+         </div>
+         <div class="m-2 box">
+           13.
+         </div>
+         <div class="m-2 box">
+           14.
+         </div>
+         <div class="m-2 box">
+         15.
+         </div>
+         <div class="m-2 box">
+          16.
+         </div>
+     </div>
+ </div>
+ <div class="row mt-5">
+     <div class="col-md-1 m-2">
+        <button class="btn btn-md btn-primary m-2">start</button>
+        <button class="btn btn-md btn-danger m-2">stop</button>
+        <button class="btn btn-md btn-warning m-2">clear</button>                               
+     </div>
+     <div class="col-md-4 ml-5">
+      <div class="piano">
+         <div data-note="C" class="key white"></div>
+         <div data-note="C#" class="key black"></div>
+         <div data-note="D" class="key white"></div>
+         <div data-note="D#" class="key black"></div>
+         <div data-note="E" class="key white"></div>
+         <div data-note="F" class="key white"></div>
+         <div data-note="F#" class="key black"></div>
+         <div data-note="G" class="key white"></div>
+         <div data-note="G#" class="key black"></div>
+         <div data-note="A" class="key white"></div>
+         <div data-note="A#" class="key black"></div>
+         <div data-note="B" class="key white"></div>
+         <div data-note="C" class="key white"></div>
+      </div>                               
+     </div>
+     <div class="col-md-1 ml-1">
+         <div class="card-body">
+            <button class="btn btn-primary mb-2">Down</button>
+         </div>                      
+     </div>
+     <div class="col-md-1 ml-1">
+         <div class="card-body">
+            <button class="btn btn-primary mb-2">Up</button>
+         </div>                      
+     </div>
+     <div class="col-md-1 ml-1">
+         <div class="card-body">
+            <button class="btn btn-secondary mb-2">Accent</button>
+         </div>                      
+     </div>
+     <div class="col-md-1 ml-5">
+         <div class="card-body">
+            <button class="btn btn-secondary mb-2">Slide</button>
+         </div>                      
+     </div>
+ </div>
+
+ <audio id="C" src="Tune/c/c c.wav"></audio>
+ <audio id="C#" src="Tune/c#/c# c#.wav"></audio>
+ <audio id="D" src="Tune/d/ d.wav"></audio>
+ <audio id="D#" src="Tune/d#/d# d#.wav"></audio>
+ <audio id="E" src="Tune/e/e e.wav"></audio>
+ <audio id="F" src="Tune/f/f f.wav"></audio>
+ <audio id="F#" src="Tune/f#/f# f#.wav"></audio>
+ <audio id="G" src="Tune/g/g g.wav"></audio>
+ <audio id="G#" src="Tune/g#/g# g#.wav"></audio>
+ <audio id="A" src="Tune/a/a a.wav"></audio>
+ <audio id="A#" src="Tune/a#/a a#.wav"></audio>
+ <audio id="B" src="Tune/b/b.wav"></audio>
+ <audio id="C" src="Tune/c/c c.wav"></audio>
+ 
+    
+<script src="app.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
